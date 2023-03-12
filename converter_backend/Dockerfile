@@ -1,11 +1,10 @@
-FROM openjdk
+FROM maven:3-openjdk-17
 
-WORKDIR /app
+WORKDIR /backend
 
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN ./mvnw dependency:resolve
+COPY pom.xml ./
+RUN mvn dependency:resolve
 
 COPY src ./src
 
-CMD ["./mvnw", "spring-boot:run"]
+CMD ["mvn", "spring-boot:run"]
