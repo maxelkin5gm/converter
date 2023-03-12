@@ -5,3 +5,6 @@
 docker-compose up
 ```
 
+Потом:
+[localhost](http://localhost)
+
