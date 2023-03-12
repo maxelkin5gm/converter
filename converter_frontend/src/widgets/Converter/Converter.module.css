@@ -1,0 +1,42 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.wrap {
+    border: 1px solid #5f6368;
+    caret-color: #8ab4f8;
+    display: flex;
+    border-radius: 6px;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    color: #bdc1c6;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select {
+    background: transparent;
+    font-size: 20px;
+    color: #bdc1c6;
+    border: none;
+    border-left: 1px solid #5f6368;
+    padding: 10px;
+}
+
+.select:focus {
+    outline: none;
+}
